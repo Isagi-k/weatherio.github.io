@@ -131,7 +131,7 @@ export const updateWeather = function(lat, lon){
             </h2>
             <div class="weapper">
                 <p class="heading">
-                    ${parseInt(temp)}&deg;<sup>c</sup>
+                    ${parseInt(temp)}&deg;C
                 </p>
                 <img src="./images/weather_icons/${icon}.png" width="64" height="64" alt="${description}"
                     class="weather-icon">
@@ -302,7 +302,7 @@ export const updateWeather = function(lat, lon){
                         <p class="body-3">${module.getHours(dateTimeUnix, timezone)}</p>
                         <img src="./images/weather_icons/${icon}.png" width="48" height="48" loading="lazy"
                             alt="${description}" class="weather-icon" title="${description}">
-                        <p class="body-3">${parseInt(temp).toPrecision(3)/10}&deg;</p>
+                        <p class="body-3">${parseInt(temp)}&deg;C</p>
                     </div>
                 `;
 
@@ -354,7 +354,7 @@ export const updateWeather = function(lat, lon){
 
                         <span class="span">
                             <p class="title-2">
-                                ${parseInt(temp_max).toPrecision(3)/10}&deg;
+                                ${parseInt(temp_max)}&deg;C
                             </p>
                         </span>
                     </div>
